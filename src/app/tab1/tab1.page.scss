@@ -1,0 +1,22 @@
+.main-card {
+    //background: var(--ion-color-primary);
+    border-radius: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px;
+    overflow: hidden;
+    ion-col {
+      display: flex;
+      justify-content: center;
+      padding: 1px;
+    }
+    ion-card {
+      background: #d1e7f1ec;
+      margin: 1px;
+      width: 100%;
+    }
+    ion-card-content {
+      color: #fff;
+      padding: 5px;
+    }
+  }

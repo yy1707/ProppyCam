@@ -7,13 +7,22 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+// import {VgCoreModule} from '@videogular/ngx-videogular/core';
+// import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+// import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+// import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    // VgCoreModule,
+    // VgControlsModule,
+    // VgOverlayPlayModule,
+    // VgBufferingModule
   ],
   declarations: [Tab1Page]
 })

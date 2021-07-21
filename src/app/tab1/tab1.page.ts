@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+//import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
+import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
+// import {VgApiService} from '@videogular/ngx-videogular/core';
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +9,24 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  // vidApi:VgApiService;
+  // players:VgApiService[];
 
-  constructor() {}
+  constructor(
+    private streamingMedia: StreamingMedia
+  ) {  }
+
+  // Playing a video.
+  playVid(video) {
+    let options: StreamingVideoOptions = {
+      successCallback: () => { console.log('Video played') },
+      errorCallback: (e) => { console.log('Error streaming') },
+      orientation: 'landscape',
+      shouldAutoClose: true,
+      controls: true
+    };
+    
+    this.streamingMedia.playVideo(video, options); 
+  }
 
 }
