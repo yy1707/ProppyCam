@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-//import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
-// import {VgApiService} from '@videogular/ngx-videogular/core';
 
 @Component({
   selector: 'app-tab1',
@@ -9,8 +7,6 @@ import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-m
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  // vidApi:VgApiService;
-  // players:VgApiService[];
 
   constructor(
     private streamingMedia: StreamingMedia
