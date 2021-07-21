@@ -10,6 +10,19 @@ export class Tab2Page {
 
   constructor(private streamingMedia: StreamingMedia) {}
 
+
+  playPreview(event) {
+    console.log(event);
+    if (event.toElement.paused) {
+      event.toElement.play();
+    }
+    else {
+      event.toElement.pause();
+    }
+    
+  }
+
+
   // Playing a video.
   playVid(video) {
     let options: StreamingVideoOptions = {

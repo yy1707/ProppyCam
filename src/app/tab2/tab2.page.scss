@@ -16,7 +16,28 @@
       width: 100%;
     }
     ion-card-content {
-      color: #fff;
+      color: rgb(59, 59, 59);
       padding: 5px;
     }
   }
+
+  .sub-label{
+    flex: 1!important;
+    color: rgba(42, 49, 73, 0.753);
+    font-size: 0.7rem;
+    //font-family:'Open Sans';
+    font-weight: 600;
+  }
+
+  .txt-right{
+    text-align: right;
+  }
+    
+  .sub-title{
+    flex: 1!important;
+    color: rgb(42, 49, 73);
+    font-size: 0.9rem;
+    //font-family:'Open Sans';
+    font-weight: 800;
+  }
+  
