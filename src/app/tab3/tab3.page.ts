@@ -15,7 +15,7 @@ export class Tab3Page {
     let options: StreamingVideoOptions = {
       successCallback: () => { console.log('Video played') },
       errorCallback: (e) => { console.log('Error streaming') },
-      orientation: 'landscape',
+      //orientation: 'landscape',
       shouldAutoClose: true,
       controls: true
     };
