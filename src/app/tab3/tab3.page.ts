@@ -153,6 +153,7 @@ export class Tab3Page {
         for (i = 0, len = data.length; i < len; i += 1) {
           // console.log(JSON.stringify(data[i]));
           this.imgPath = data[i].fullPath;
+          this.imgPath = (this.imgPath.includes('file://')?this.imgPath:'file://'+this.imgPath);
           this.setImgSrc(this.imgPath);
         }
       },
@@ -163,7 +164,7 @@ export class Tab3Page {
   }
 
   playPreview(event) {
-    alert(event.srcElement.src);
+    // alert(event.srcElement.src);
     if (event.srcElement.paused) {
       event.srcElement.play();
     }

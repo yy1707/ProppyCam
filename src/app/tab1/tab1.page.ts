@@ -124,6 +124,7 @@ export class Tab1Page {
   }
   // Preview video before upload.
   previewVideo() {
+    // alert(this.videopath);
     if(this.videopath == "") {
       alert("Record a video before previewing it.");
       return;
@@ -171,6 +172,7 @@ export class Tab1Page {
         for (i = 0, len = data.length; i < len; i += 1) {
           // console.log(JSON.stringify(data[i]));
           this.videopath = data[i].fullPath;
+          this.videopath = (this.videopath.includes('file://')?this.videopath:'file://'+this.videopath);
 
           this.videoEditor.createThumbnail({
             fileUri: this.videopath,
@@ -198,7 +200,7 @@ export class Tab1Page {
   }
 
   playPreview(event) {
-    alert(event.srcElement.src);
+    // alert(event.srcElement.src);
     if (event.srcElement.paused) {
       event.srcElement.play();
     }

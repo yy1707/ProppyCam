@@ -61,7 +61,7 @@
                         <ion-row>
                             <ion-col size="4">
                                 <ion-icon class="vid-icon" name="videocam"></ion-icon>
-                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/001-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                <video (press)="playPreview($event)" (tap)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/001-thumb.jpg" preload="none" loop muted playsinline crossorigin>
                                     <source src='https://cdn.proppyapp.biz/videos/test/001/001-s.mp4' type='video/mp4' />
                                 </video>
                             </ion-col>
