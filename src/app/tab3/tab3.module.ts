@@ -8,6 +8,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 
+import { File } from '@ionic-native/File/ngx';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
     IonicModule,
@@ -16,7 +19,11 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [Tab3Page]
+  declarations: [Tab3Page],
+  providers: [
+    File
+  ],
 })
 export class Tab3PageModule {}

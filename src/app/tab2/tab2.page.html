@@ -1,339 +1,341 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      9 videos
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            9 videos/images
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <div color="primary" class="main-card">
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
+    <div color="primary" class="main-card">
         <ion-row>
-            <ion-col size="12" text-start>
-                <ion-label class="sub-title">Saujana Apartment, Damansara Damai</ion-label>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col size="12" text-start>
+                                <ion-label class="sub-title">2 Sty Bungalow, Tropicana PJ</ion-label>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="5" text-start>
+                                <ion-label class="sub-label">RM 2,270,000.00</ion-label>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/bedicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">6</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/bathroomicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">5</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/parkingicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">4</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="4" text-end>
+                                <ion-label class="sub-label txt-right">2,714.00 sqft.</ion-label>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/001-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/001-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/002-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/002-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/003-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/003-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/004-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/004-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/005-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/005-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/006-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/006-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/007-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/007-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/001/008-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/001/008-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-card-content>
+                </ion-card>
             </ion-col>
         </ion-row>
 
         <ion-row>
-            <ion-col size="5" text-start>
-                <ion-label class="sub-label">RM 270,000.00</ion-label>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/bedicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">3</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/bathroomicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">2</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/parkingicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">2</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="4" text-end>
-                <ion-label class="sub-label txt-right">714.00 sqft.</ion-label>
-            </ion-col>
-        </ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col size="12" text-start>
+                                <ion-label class="sub-title">3 Sty Bungalow, Tropicana PJ</ion-label>
+                            </ion-col>
+                        </ion-row>
 
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
+                        <ion-row>
+                            <ion-col size="5" text-start>
+                                <ion-label class="sub-label">RM 3,620,000.00</ion-label>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/bedicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">8</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/bathroomicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">6</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/parkingicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">4</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
 
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
+                            <ion-col size="4" text-end>
+                                <ion-label class="sub-label txt-right">3,020.00 sqft.</ion-label>
+                            </ion-col>
+                        </ion-row>
 
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-        <ion-row>
-            <ion-col size="12" text-start>
-                <ion-label class="sub-title">V residence Suites @ Sunway Velocity</ion-label>
-            </ion-col>
-        </ion-row>
-
-        <ion-row>
-            <ion-col size="5" text-start>
-                <ion-label class="sub-label">RM 620,000.00</ion-label>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/bedicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">3</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/bathroomicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">2</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/parkingicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">2</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-
-            <ion-col size="4" text-end>
-                <ion-label class="sub-label txt-right">1020.00 sqft.</ion-label>
-            </ion-col>
-        </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-
-        <ion-row>
-            <ion-col size="12" text-start>
-                <ion-label class="sub-title">Vista Sentul Residences, Sentul</ion-label>
+                        <ion-row>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="image"></ion-icon>
+                                <img (click)="onGesture('click')" width="100%" height="100%" src="https://cdn.proppyapp.biz/videos/test/002/001.jpg">
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/002-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/002-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/003-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/003-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/004-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/004-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/005-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/005-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/006-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/006-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/007-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/007-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/008-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/008-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/002/009-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/002/009-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
             </ion-col>
         </ion-row>
 
         <ion-row>
-            <ion-col size="5" text-start>
-                <ion-label class="sub-label">RM 780,000.00</ion-label>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/bedicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">3</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/bathroomicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">2</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="1">
-            <ion-row>
-                <ion-col size="6">
-                <ion-img class="img-icon non-block fix-height" src="/assets/icon/parkingicon.svg"></ion-img>
-                </ion-col>
-                <ion-col size="6">
-                <ion-label class="sub-label">2</ion-label>
-                </ion-col>
-            </ion-row>
-            </ion-col>
-            <ion-col size="4" text-end>
-                <ion-label class="sub-label txt-right">689.00 sqft.</ion-label>
+            <ion-col>
+                <ion-card>
+                    <ion-card-content>
+
+                        <ion-row>
+                            <ion-col size="12" text-start>
+                                <ion-label class="sub-title">3 Sty Semi D, Tropicana PJ</ion-label>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="5" text-start>
+                                <ion-label class="sub-label">RM 3,580,000.00</ion-label>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/bedicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">7</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/bathroomicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">6</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <ion-img class="img-icon non-block fix-height" src="/assets/icon/parkingicon.svg"></ion-img>
+                                    </ion-col>
+                                    <ion-col size="6">
+                                        <ion-label class="sub-label">4</ion-label>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-col size="4" text-end>
+                                <ion-label class="sub-label txt-right">2,689.00 sqft.</ion-label>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/001-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/001-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/002-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/002-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/003-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/003-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/004-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/004-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/005-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/005-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/006-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/006-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/007-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/007-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/008-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/008-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon class="vid-icon" name="videocam"></ion-icon>
+                                <video (press)="playPreview($event)" (click)="onGesture('click')" width="100%" height="100%" poster="https://cdn.proppyapp.biz/videos/test/003/009-thumb.jpg" preload="none" loop muted playsinline crossorigin>
+                                    <source src='https://cdn.proppyapp.biz/videos/test/003/009-s.mp4' type='video/mp4' />
+                                </video>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
             </ion-col>
         </ion-row>
 
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
+    </div>
 
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playPreview($event)" width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playPreview($event)"width="100%" height="100%" preload="metadata" loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4#t=0.1' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-
-  </div>
-
-<ion-grid>
-</ion-grid>
+    <ion-grid>
+    </ion-grid>
 </ion-content>

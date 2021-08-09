@@ -1,381 +1,48 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      6 x 9 videos
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Upload Photo
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  <div color="primary" class="main-card">
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
+    <div color="primary" class="main-card">
+        <ion-row>
+            <ion-col>
+                <!-- <video id="upload-vid" (click)="playPreview($event)" width="100%" height="100%" [poster]="mySrc" preload="auto" loop muted playsinline crossorigin>
+                          <source src="mySrc" type='video/mp4'>
+                        </video> -->
+                <img id="upload-img" [src]="mySrc">
             </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
+        </ion-row>
+        <ion-row>
+            <ion-item>
+                <ion-label>AppType: </ion-label>
+                <ion-input [(ngModel)]="appName" value="{{appName}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>ListingID: </ion-label>
+                <ion-input [(ngModel)]="listingID" value="{{listingID}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Hashtag: </ion-label>
+                <ion-input [(ngModel)]="hashTag" value="{{hashTag}}"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button (click)="takePhoto()" color="success">Take Photo</ion-button>
             </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
+            <ion-col>
+                <ion-button (click)="previewPhoto()" color="secondary">Preview Photo</ion-button>
             </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
+            <ion-col>
+                <ion-button (click)="uploadPhoto()" color="danger">Upload Photo</ion-button>
             </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
+            <ion-col>
+                <ion-button (click)="playPhoto()" color="danger">Display Live Photo</ion-button>
             </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-
-          <ion-row>
-            <ion-col size="4">
-                <video (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-01.mp4')" width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin >
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-01-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-02.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-02-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-            <ion-col size="4">
-                <video  (click)="playVid('https://cdn.proppyapp.biz/videos/test/vid-03.mp4')"width="100%" height="100%" preload="auto" autoplay loop muted playsinline crossorigin>
-                    <source src='https://cdn.proppyapp.biz/videos/test/vid-03-s.mp4' type='video/mp4'>
-                </video>
-            </ion-col>
-          </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </div>
-
-<ion-grid>
-</ion-grid>
+        </ion-row>
+    </div>
 </ion-content>

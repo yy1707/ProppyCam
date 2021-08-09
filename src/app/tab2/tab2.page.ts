@@ -10,14 +10,17 @@ export class Tab2Page {
 
   constructor(private streamingMedia: StreamingMedia) {}
 
+  onGesture(str) {
+    alert("Open Property Detail page.");
+  }
 
   playPreview(event) {
-    console.log(event);
-    if (event.toElement.paused) {
-      event.toElement.play();
+    console.log(event.srcEvent.srcElement);
+    if (event.srcEvent.srcElement.paused) {
+      event.srcEvent.srcElement.play();
     }
     else {
-      event.toElement.pause();
+      event.srcEvent.srcElement.pause();
     }
     
   }
